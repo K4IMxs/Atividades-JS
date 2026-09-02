@@ -1,51 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+
     <title>Verificadores</title>
- 
+
     <link rel="stylesheet" href="style.css">
 </head>
- 
-<body>
- 
-    <h1>Verificador de Idade</h1>
- 
-    <input type="number" id="idade" placeholder="Digite sua idade">
- 
-    <button onclick="verificarIdade()">Verificar</button>
- 
-    <p id="ResultadoIdade"></p>
- 
- 
-    <h1>Verificador de Número</h1>
- 
-    <input type="number" id="numero" placeholder="Digite um número">
- 
-    <button onclick="verificarNumero()">Verificar</button>
- 
-    <p id="ResultadoNumero"></p>
- 
- 
-    <h1>Aprovação do Aluno</h1>
- 
-    <input type="number" id="nota" placeholder="Digite sua nota">
- 
-    <button onclick="verificarNota()">Verificar</button>
- 
-    <p id="ResultadoNota"></p>
 
-    <h1>Sistema de Prioridade</h1>
- 
-    <input type="text" id="prioridade"  placeholder="Digite sua prioridade">
- 
-    <button onclick="verificarPrioridade()">Verificar</button>
- 
-    <p id="resultado"></p>
+<body>
+
+    <div class="CardJS">
+        <h1>Verificador de Idade</h1>
+
+        <input type="number" id="idade" placeholder="Digite sua idade">
+
+        <button onclick="verificarIdade()">Verificar</button>
+
+        <p id="ResultadoIdade"></p>
+    </div>
+
+
+    <div class="CardJS">
+        <h1>Verificador de Número</h1>
+
+        <input type="number" id="numero" placeholder="Digite um número">
+
+        <button onclick="verificarNumero()">Verificar</button>
+
+        <p id="ResultadoNumero"></p>
+    </div>
+
+
+    <div class="CardJS">
+        <h1>Aprovação do Aluno</h1>
+
+        <input type="number" id="nota" placeholder="Digite sua nota">
+
+        <button onclick="verificarNota()">Verificar</button>
+
+        <p id="ResultadoNota"></p>
+    </div>
+
+
+    <div class="CardJS">
+        <h1>Sistema de Prioridade</h1>
+
+        <input type="text" id="prioridade" placeholder="Digite sua prioridade">
+
+        <button onclick="verificarPrioridade()">Verificar</button>
+
+        <p id="resultadoPrioridade"></p>
+    </div>
+
+
+    <div class="CardJS">
+        <h1>Verificar Tarefa</h1>
+
+        <select id="prioridadeSelection">
+            <option value="selecionar">Selecionar...</option>
+            <option value="urgente">Urgente</option>
+            <option value="alta">Alta</option>
+            <option value="media">Média</option>
+            <option value="baixa">Baixa</option>
+        </select>
+
+        <label class="check-label" for="atrasada">
+            <input type="checkbox" id="atrasada">
+            <span>Tarefa está atrasada</span>
+        </label>
+
+        <button onclick="verificarTarefa()">Verificar</button>
+
+        <p id="resultadoTarefa"></p>
+    </div>
+
+     <div class="CardJS">
+        <h1>Verificar Tarefa</h1>
+
+        <input type="text" id="usuarioInput" placeholder="Digite seu usuario">
+        <input type="text" id="senhaInput" placeholder="Digite sua senha">
+
+        <button onclick="verificarUsuario()">Verificar</button>
+
+        <p id="resultadoUsuario"></p>
+    </div>
+
+    <div class="CardJS">
+        <h1>Verificar Idade - Ternário</h1>
+
+        <input type="text" id="ternarioIdade" placeholder="Digite sua idade">
+
+        <button onclick="verificarTernario()">Verificar</button>
+
+        <p id="resultadoTernario"></p>
+    </div>
+
 
     <script src="script.js"></script>
- 
+
 </body>
+
 </html>
