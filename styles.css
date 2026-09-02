@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    /* Fundo sombrio */
+    background:
+        radial-gradient(circle at center, #2b0909 0%, #100404 45%, #050505 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    padding: 30px;
+
+    gap: 25px;
+    flex-wrap: wrap;
+
+    color: #e5e5e5;
+}
+
+/* CARDS */
+.CardJS {
+    background: #111111;
+
+    width: 280px;
+    min-height: 300px;
+
+    padding: 25px;
+    border-radius: 8px;
+
+    /* Borda vermelha */
+    border: 1px solid #5c1111;
+    border-top: 3px solid #9e1717;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.6),
+        0 0 15px rgba(120, 0, 0, 0.15);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+
+    transition: 0.3s;
+}
+
+.CardJS:hover {
+    transform: translateY(-8px);
+
+    border-color: #a51c1c;
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.8),
+        0 0 25px rgba(150, 0, 0, 0.3);
+}
+
+/* TÍTULOS */
+.CardJS h1 {
+    font-size: 22px;
+
+    color: #b51c1c;
+
+    text-align: center;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    text-shadow:
+        0 0 8px rgba(180, 0, 0, 0.5);
+}
+
+/* INPUTS */
+.CardJS input {
+    width: 100%;
+
+    padding: 12px;
+
+    background: #080808;
+    color: #eeeeee;
+
+    border: 1px solid #4d1515;
+    border-radius: 5px;
+
+    font-size: 15px;
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.CardJS input::placeholder {
+    color: #777;
+}
+
+.CardJS input:focus {
+    border-color: #a51c1c;
+
+    box-shadow:
+        0 0 8px rgba(165, 28, 28, 0.3);
+}
+
+/* SELECT */
+.CardJS select {
+    width: 100%;
+
+    padding: 12px;
+
+    background: #080808;
+    color: #eeeeee;
+
+    border: 1px solid #4d1515;
+    border-radius: 5px;
+
+    font-size: 15px;
+    outline: none;
+
+    cursor: pointer;
+}
+
+.CardJS select:focus {
+    border-color: #a51c1c;
+}
+
+.CardJS select option {
+    background: #111111;
+    color: #eeeeee;
+}
+
+/* LABEL */
+.CardJS label {
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+/* CHECKBOX */
+.check-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    cursor: pointer;
+}
+
+.check-label input {
+    width: 17px;
+    height: 17px;
+
+    accent-color: #9e1717;
+
+    cursor: pointer;
+}
+
+/* BOTÃO */
+.CardJS button {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #a51c1c;
+    border-radius: 5px;
+
+    background: #751313;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.CardJS button:hover {
+    background: #a51c1c;
+
+    box-shadow:
+        0 0 15px rgba(180, 0, 0, 0.4);
+}
+
+.CardJS button:active {
+    transform: scale(0.97);
+}
+
+/* RESULTADO */
+.CardJS p {
+    min-height: 30px;
+
+    padding: 8px;
+
+    background: #090909;
+
+    border-left: 2px solid #8f1717;
+
+    text-align: center;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    color: #cccccc;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 650px) {
+    body {
+        flex-direction: column;
+    }
+
+    .CardJS {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+/* BARRA DE ROLAGEM */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #641212;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #9e1717;
+}
