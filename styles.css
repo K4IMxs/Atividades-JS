@@ -236,3 +236,15 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #9e1717;
 }
+
+/* Texto informativo específico para cards com descrições */
+.CardJS .info-texto {
+    font-size: 14px;
+    color: #cccccc;
+    line-height: 1.4;
+}
+
+/* Ajuste nos marcadores fortes */
+.CardJS .info-texto strong {
+    color: #ffffff;
+}
