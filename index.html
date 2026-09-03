@@ -12,6 +12,10 @@
 
 <body>
 
+    <!-- ============================================== -->
+    <!--                   Atividade 1                  -->
+    <!-- ============================================== -->
+
     <div class="CardJS">
         <h1>Verificador de Idade</h1>
 
@@ -22,6 +26,10 @@
         <p id="ResultadoIdade"></p>
     </div>
 
+    <!-- ============================================== -->
+    <!--                   Atividade 2                  -->
+    <!-- ============================================== -->
+    
 
     <div class="CardJS">
         <h1>Verificador de Número</h1>
@@ -33,7 +41,10 @@
         <p id="ResultadoNumero"></p>
     </div>
 
-
+    <!-- ============================================== -->
+    <!--                   Atividade 3                  -->
+    <!-- ============================================== -->
+    
     <div class="CardJS">
         <h1>Aprovação do Aluno</h1>
 
@@ -44,6 +55,9 @@
         <p id="ResultadoNota"></p>
     </div>
 
+    <!-- ============================================== -->
+    <!--                   Atividade 4                  -->
+    <!-- ============================================== -->
 
     <div class="CardJS">
         <h1>Sistema de Prioridade</h1>
@@ -55,6 +69,9 @@
         <p id="resultadoPrioridade"></p>
     </div>
 
+    <!-- ============================================== -->
+    <!--                   Atividade 5                  -->
+    <!-- ============================================== -->
 
     <div class="CardJS">
         <h1>Verificar Tarefa</h1>
@@ -77,6 +94,10 @@
         <p id="resultadoTarefa"></p>
     </div>
 
+    <!-- ============================================== -->
+    <!--                   Atividade 6                  -->
+    <!-- ============================================== -->
+
      <div class="CardJS">
         <h1>Verificar Tarefa</h1>
 
@@ -88,6 +109,10 @@
         <p id="resultadoUsuario"></p>
     </div>
 
+    <!-- ============================================== -->
+    <!--                   Atividade 7                  -->
+    <!-- ============================================== -->
+
     <div class="CardJS">
         <h1>Verificar Idade - Ternário</h1>
 
@@ -98,6 +123,104 @@
         <p id="resultadoTernario"></p>
     </div>
 
+    <!-- ============================================== -->
+    <!--                   Atividade 8                  -->
+    <!-- ============================================== -->
+
+    <div class="CardJS">
+        <h1>Sistema de Desconto</h1>
+
+        <input type="text" id="valorCompra" placeholder="Digite o valor de sua compra">
+
+        <label class="check-label" for="desconto">
+            <input type="checkbox" id="clientVip">
+            <span>Cliente Vip</span>
+        </label>
+
+        <button onclick="verificarDesconto()">Verificar</button>
+
+        <p id="resultadoDesconto"></p>
+    </div>
+
+    <!-- ============================================== -->
+    <!--                  Atividade 9                   -->
+    <!-- ============================================== -->
+
+    <div class="CardJS">
+        <h1>Validação de Tarefa</h1>
+
+        <div class="info-texto">
+            <strong>Tarefa atual:</strong> Estudar JavaScript
+        </div>
+
+        <div class="info-texto">
+            <strong>Status:</strong>
+            <span id="statusTarefa">Pendente</span>
+        </div>
+
+        <label class="check-label" for="validaçãoTarefa">
+            <input type="checkbox" id="validaçãoTarefa"> 
+            <span>Tarefa Concluída</span>
+        </label>
+
+        <button onclick="verificarTarefa()">Verificar</button>
+
+        <p id="resultadoValidaçãoTarefa"></p>
+    </div>
+
+    <!-- ============================================== -->
+    <!--                  Atividade 10                  -->
+    <!-- ============================================== -->
+
+    <div class="CardJS">
+        <h1>Sistema de Atendimento</h1>
+
+        <select id="opcaoAtendimento">
+            <option value="">Selecione uma opção...</option>
+            <option value="1">1 - Consultar pedido</option>
+            <option value="2">2 - Cancelar pedido</option>
+            <option value="3">3 - Falar com atendente</option>
+            <option value="4">4 - Encerrar atendimento</option>
+        </select>
+
+        <label class="check-label" for="clienteVipAtendimento">
+            <input type="checkbox" id="clienteVipAtendimento">
+            <span>Cliente VIP</span>
+        </label>
+
+        <button onclick="processarAtendimento()">Processar</button>
+
+        <p id="resultadoAtendimento"></p>
+    </div>
+
+    <!-- ============================================== -->
+    <!--                  Desafio Extra                 -->
+    <!-- ============================================== -->
+
+    <div class="CardJS">
+        <h1>Gerenciador de Tarefas</h1>
+
+        <select id="desafioPrioridade">
+            <option value="urgente">Alta</option>
+            <option value="alta">Urgente</option>
+            <option value="media">Média</option>
+            <option value="baixa">Baixa</option>
+        </select>
+
+        <label class="check-label" for="desafioAtrasada">
+            <input type="checkbox" id="desafioAtrasada">
+            <span>Tarefa Atrasada</span>
+        </label>
+
+        <label class="check-label" for="desafioConcluida">
+            <input type="checkbox" id="desafioConcluida">
+            <span>Tarefa Concluída</span>
+        </label>
+
+        <button onclick="processarDesafioExtra()">Verificar Status</button>
+
+        <p id="resultadoDesafioExtra"></p>
+    </div>
 
     <script src="script.js"></script>
 
